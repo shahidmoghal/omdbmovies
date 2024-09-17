@@ -1,0 +1,128 @@
+body h1{
+    text-align: center;
+    background-color: rgb(23, 1, 53);
+    padding: 15px;
+    color: rgb(212, 187, 43);
+}
+
+body{
+    background-color: rgb(4, 10, 27);
+    color: rgb(251, 251, 251);
+}
+
+.search{
+    text-align: center;
+}
+.search button{
+    margin-left: 10px;
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+@media (max-width:530px) {
+    .search button {
+        display: block;
+        margin-left: 40%;
+        margin-top: 10px;
+        width: 20%; /* Make the buttons take up the full width of their container */
+    }
+}
+
+.search input{
+    width: 280px;
+    height: 30px;
+}
+
+
+.movie-card {
+    width: 230px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    height: 380px;
+}
+
+
+.movie-card img {
+    width: 100%; 
+    height: 75%; 
+    
+}
+
+.movie-card h5 {
+    margin: 10px 0; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 0.9rem;
+    margin: 10px;
+}
+
+.all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.pagination{
+    text-align: center;
+}
+
+/* Movie detail card styling */
+.movie-details {
+    width: 40%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Movie title styling */
+.movie-details h2 {
+    font-size: 1.8rem;
+    color: rgb(212, 187, 43);
+    margin-bottom: 15px;
+}
+
+/* Movie image styling */
+.movie-details img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Information section styling */
+.movie-details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #008080;
+}
+
+/* Specific elements with highlight */
+.movie-details p span {
+    color: rgb(212, 187, 43); /* Highlight specific labels */
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    .movie-details {
+        width: 95%;
+    }
+    
+    .movie-details h2 {
+        font-size: 1.4rem;
+    }
+    
+    .movie-details img {
+        max-width: 100%;
+    }
+}
